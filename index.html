@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="title">Form</h1>
+    <p id="description">Fill the form</p>
+    <form id="form" onsubmit="update(); return false;" required>
+        <div class="form-group">
+            <label for="fname">Firstname:</label>
+            <input type="text" id="first-name" placeholder="enter the Firstname" required><br><br>
+            <label for="lname">Lastname:</label>
+            <input type="text" id="last-name" placeholder="enter the lastname" required><br><br>
+            <label for="address">Address:</label>
+            <textarea id="address" placeholder="enter the address" required></textarea><br><br>
+            <label for="pincode">Pincode:</label>
+            <input type="text" id="pincode" placeholder="enter the pincode" required><br><br>
+            <label for="gender">Gender:</label>
+            <input type="radio" id="gender" name="gender" required>male<input type="radio" id="gender" name="gender" required>female<br><br>
+            <label for="food">Choice of Food:</label>
+            <select name="food" id="food" placeholder="choose the food" multiple required>
+                <option value="idli">idli</option>
+                <option value="dosa">dosa</option>
+                <option value="chapathi">chapathi</option>
+                <option value="pongal">pongal</option>
+                <option value="poori">poori</option>
+            </select><br><br>
+            <label for="state">State:</label>
+            <input type="text" id="state" placeholder="enter the state" required><br><br>
+            <label for="country">Country:</label>
+            <input type="text" id="country" placeholder="enter the country" required><br><br>
+            <button class="btn btn-primary"id="submit" value="submit">submit</button>
+            <input type="reset" value="Clear">
+        </div>
+    </form><br><br>
+
+    <h1>TABLE</h1>
+    <table class="table" id="mytable" border="2">
+        <thead><tr>
+            <th>First name</th>
+            <th>Last name</th>
+            <th>Address</th>
+            <th>Pincode</th>
+            <th>Gender</th>
+            <th>Choice of Food</th>
+            <th>State</th>
+            <th>Country</th>
+        </tr></thead>
+        <tbody></tbody>
+    </table>
+    <script src="script.js"></script>
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+</body>
+
+</html>
